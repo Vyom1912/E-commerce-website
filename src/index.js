@@ -7,11 +7,15 @@ import ShopContextProvider from "./Context/ShopContext";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <React.StrictMode>
-    <ShopContextProvider>
-      <App />
-    </ShopContextProvider>
-  </React.StrictMode>
+  // <React.StrictMode>
+  //   <ShopContextProvider>
+  //     <App />
+  //   </ShopContextProvider>
+  // </React.StrictMode>
+  <HashRouter> {/* ✅ Correct for GitHub Pages */}
+  <App />
+</HashRouter>
+
 );
 
 // If you want to start measuring performance in your app, pass a function
